@@ -1,0 +1,14 @@
+<div class="container p-5 d-flex" style="gap: 20px">
+            <% alluser.foreach(function(elem){%>
+            <div class="card" style="width: 18rem;">
+                <img src="<%= elem.image %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= elem.username %></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h6>likes <%= profilelikes %></h6>
+                  <a href="/delete/<%=elem._id %>" class="btn btn-danger">DELETE</a>
+                  <a href="/edit/<%=elem._id %>" class="btn btn-primary">Edit</a>
+                  <a href="/like/<%=elem._id %>" class="btn btn-primary">likes</a>
+                </div>
+              </div> 
+            <% })%>

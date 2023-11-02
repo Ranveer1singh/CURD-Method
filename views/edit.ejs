@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crud-opp</title>
+</head>
+
+<body>
+  <form action="/update/<%= founduser.id %>" method="post">
+    <input type="text" name="username" placeholder="username" value="<%= founduser.username %>">
+    <input type="text" name="age" placeholder="age" value="<%= founduser.age %>">
+    <input type="text" name="email" placeholder="email" value="<%= founduser.email %>">
+    <input type="text" name="image" placeholder="image" value="<%= founduser.image %>">
+    <input type="text" name="contact" placeholder="contact" value="<%= founduser.contact %>">
+    <input type="submit" value="update">
+</form>
+</body>
+
+</html>
